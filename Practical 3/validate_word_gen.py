@@ -39,7 +39,6 @@ def create_word(word_format):
         elif kind == "v":
             word += random.choice(VOWELS)
     return word
-
 main(word_format)
 
 
