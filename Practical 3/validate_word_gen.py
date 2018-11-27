@@ -1,7 +1,7 @@
 import random
 VOWELS = "aeiou"
 CONSONANTS = "bcdfghjklmnpqrstvwxyz"
-ALPHABETS = "bcdfghjklmnpqrstvwxyzaeiou"
+# ALPHABETS = "bcdfghjklmnpqrstvwxyzaeiou"
 
 word_format = input("""Enter word format such as 'ccvcvvc'.
 c for consonants.
