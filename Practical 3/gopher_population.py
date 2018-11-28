@@ -5,21 +5,21 @@ print("Starting population: {}".format(STARTING_POPULATION))
 
 def birth_rate():
     for i in range(1, 11):
-        born = round(random.uniform(0.1, 0.2), 3)*1000
+        born = int(random.uniform(0.1, 0.2)*STARTING_POPULATION)
         return born
 
 def death_rate():
     for i in range(1, 11):
-        died = round(random.uniform(0.05, 0.25), 3)*1000
+        died = int(random.uniform(0.05, 0.25)*STARTING_POPULATION)
         return died
 
 def main():
     population = STARTING_POPULATION
     for i in range(1, 11):
-        print("\n")
+        print()
         print("Year", i,"\n"+"*"*5)
-        born = int(birth_rate())
-        died = int(death_rate())
+        born = birth_rate()
+        died = death_rate()
         print("{} gophers were born. {} died.".format(born, died))
         remain = born - died
         population = population + remain
