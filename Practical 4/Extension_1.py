@@ -9,12 +9,8 @@ Nice. Except, it’s broken! It reads the lists per user not per subject so the 
 Use the debugger to follow what it's doing... then fix it.
 """
 
-# import pandas as pd
-# table_form = pd.read_csv("scores.csv")
+
 from tabulate import tabulate
-from prettytable import PrettyTable
-from prettytable import from_csv
-import csv
 def main():
     """Read and display student scores from scores file."""
     scores_file = open("scores.csv")
@@ -42,6 +38,4 @@ def main():
         print("Average:", sum(score_sequence)/len(score_sequence))
         print()
     print(tabulate(score_values, headers= subjects, tablefmt="grid"))
-
-
 main()
