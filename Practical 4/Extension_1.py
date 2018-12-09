@@ -9,7 +9,6 @@ Nice. Except, it’s broken! It reads the lists per user not per subject so the 
 Use the debugger to follow what it's doing... then fix it.
 """
 
-
 from tabulate import tabulate
 def main():
     """Read and display student scores from scores file."""
@@ -23,6 +22,7 @@ def main():
         score_numbers = [int(value) for value in score_strings]
         score_values.append(score_numbers)
     scores_file.close()
+    print("Score value is: ", score_values)
     final_score = []
     for i in range(len(subjects)):
         print(subjects[i], "Scores:")
