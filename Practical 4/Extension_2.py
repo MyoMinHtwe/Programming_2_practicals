@@ -2,7 +2,7 @@ numbers = []
 num_format = "Number"
 num_of_num = 1
 number = float(input("{} {}: ".format(num_format, num_of_num)))
-while number >=0:
+while number >= 0:
     numbers.append(number)
     num_of_num += 1
     number = float(input("{} {}: ".format(num_format, num_of_num)))
